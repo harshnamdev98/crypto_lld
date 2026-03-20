@@ -9,7 +9,7 @@ class NotificationService:
 	def create_notification(self, notification):
 		self.repo.save(notification)
 
-	def proces_notification(self, notification: Notification):
+	def process_notification(self, notification: Notification):
 		for channel in notification.channels:
 			sender = SenderFactory.get_sender(channel.channel_type)
 

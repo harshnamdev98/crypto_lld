@@ -23,7 +23,7 @@ def main():
 	print("pending", repo.get_notification_by_status("PENDING"))
 
 
-	service.proces_notification(notification)
+	service.process_notification(notification)
 
 	print("failed", repo.get_notification_by_status("FAILED"))
 

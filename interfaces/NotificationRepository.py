@@ -6,7 +6,7 @@ class NotificationRepository(ABC):
 		pass
 
 	@abstractmethod
-	def update(self, id, status):
+	def update(self, id, channel_type, status):
 		pass
 
 	@abstractmethod
